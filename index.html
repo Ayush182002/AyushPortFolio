@@ -5,160 +5,140 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO WEBSITE</title>
-
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
         <a href="#" class="logo">PORTFOLIO</a>
         <i class='bx bx-menu' id="menu-icon"></i>
-
         <nav class="navigation">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#edu">Educational Qualification</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
-            
         </nav>
-
     </header>
 
-   <!-- home section design -->
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello,It's Me</h3>
+            <h1>Ayush Yadav</h1>
+            <h3>And I'm a <span class="span">  Frontend Developer</span></h3>
+            <p>Being a student of Computer Science Department, I am a real enthusiast of modern technology and am always eager to learn as much as I can.</p>
+            <div class="social-media">
+                <!-- <a href="https://www.facebook.com/profile.php?id=100075985232249&mibextid=ZbWKwL"><i class='bx bxl-facebook'></i></a>
+                <a href="https://www.instagram.com/invites/contact/?i=1vb1n7lzrecli&utm_content=n4e7k4z"><i class='bx bxl-instagram'></i></a> -->
+                <a href="https://www.linkedin.com/in/ayush-yadav-266392259" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/ayush182002" target="_blank"><i class='bx bxl-github'></i></a>
 
-   <section class="home" id="home">
-     <div class="home-content">
-        <h3>Hello,It's Me</h3>
-        <h1>Ayush Yadav</h1>
-        <h3>And I'm a <span class="span">  Full Stack Developer</span></h3>
-        <p>
-            Being a student of Computer Science Department ,I am a real enthusiast of modern technology and is always eager to learn as much as I can.
-
-        </p>
-        <div class="social-media">
-            <a href="https://www.facebook.com/profile.php?id=100075985232249&mibextid=ZbWKwL"><i class='bx bxl-facebook' ></i></a>
-            <a href="https://www.instagram.com/invites/contact/?i=1vb1n7lzrecli&utm_content=n4e7k4z"><i class='bx bxl-instagram' ></i></a>
-            <a href="https://www.linkedin.com/in/ayush-yadav-266392259"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+            <a href="Ayush_Resume.pdf" class="btn" target="_blank" download="Ayush_Yadav_Resume.pdf">Download CV</a>
         </div>
-
-        <a href="C:\Users\ayush\OneDrive\Desktop\WEB DEVELOPMENT\Front End\PORTFOLIO\INDEX\Ayush_Yadav_Resume.pdf" class="btn" download="resume">Download CV</a>
-     </div>
-
-     <div class="home-img">
-        <img src="./self-image.jpg" alt="">
-     </div>
-
-   </section>
-
-   <!-- about section design-->
-
-   <section class="about" id="about">
-    <div class="about-image">
-        <img src="./about.jpg" alt="">
-    </div>
-
-    <div class="about-container">
-        <h2 class="heading">About <span>Me</span></h2>
-        <h3>Frontend Developer</h3>
-        <p>Hello MySelf Ayush Yadav, I am a student of IIEST Shibpur Pursuing BTech and my branch is Computer Science and Technology.
-            My interest is in Web Development and currently I am learning to become a full Stack Web developer.
-        </p>
-        <a href="#" class="btn">Read more</a>
-    </div>
+        <div class="home-img">
+            <img src="./self-image.jpg" alt="">
+        </div>
     </section>
 
-    <!--Educational Qualification -->
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-image">
+            <img src="./about.jpg" alt="">
+        </div>
+        <div class="about-container">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Frontend Developer</h3>
+            <p>Hello, I am Ayush Yadav, a student of IIEST Shibpur pursuing BTech in Computer Science and Technology. My interest is in Web Development and currently I am learning to become a full stack web developer.</p>
+            <div id="moreText" style="display: none;">
+                <p>I have experience with various web technologies including HTML, CSS, JavaScript, and frameworks such as Flutter and Angular. In addition to web development, I was a front-end developer intern at <a href="https://www.ainak.ai/" target="_blank" rel="noopener noreferrer" style="color: #3af685;">AINAK AI</a>.</p>
+            </div>
+            
+            <a href="#" class="btn" id="readMoreBtn">Read more</a>
+        </div>
+    </section>
 
+    <!-- Educational Qualification -->
     <section class="edu" id="edu">
         <h2 class="heading">My <span>Education</span></h2>
-        <div  class="edu-container">
-        <div class="edu-box">
-        <div class="school">
-            <i class='bx bxs-school'></i>
-            <h3>School</h3>
-            <p>DAV Public School, Raniganj</p>
-            <a href="#" class="btn">Read more</a>
-        </div>
-        </div>
-        
-        <div class="edu-box">
-        <div class="college">
-            <i class='bx bxs-graduation' ></i>
-            <h3>College</h3>
-            <p>IIEST SHIBPUR</p>
-            <a href="#" class="btn">Read more</a>
-            
-        </div>    
-        </div>
-        </div>
-
-    </section>
-
-    <!--Portfolio making -->
-
-    <section class="portfolio" id="portfolio">
-        <h2 class="heading">Latest <span>Projects</span></h2>
-        
-        <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="./web-design.jpg" alt="">
-                <div class="portfolio-layer">
-                  <h4>Chat-Application</h4>
-                  <p>A multicilent Chat-Application Project, using Socket-IO</p>
-                  <a href="#"><i class='bx bx-link' ></i></a>
+        <div class="edu-container">
+            <div class="edu-box">
+                <div class="school">
+                    <i class='bx bxs-school'></i>
+                    <h3>School</h3>
+                    <p>DAV Public School, Raniganj</p>
+                    <a href="https://rljdmcdavpsraniganj.org/" target="_blank" class="btn">Read more</a>
                 </div>
             </div>
-            
-
-            <div class="portfolio-box">
-                <img src="./music.jpg" alt="">
-                <div class="portfolio-layer">
-                  <h4>Music-App</h4>
-                  <p>A front-end music tile web application.</p>
-                  <a href="#"><i class='bx bx-link' ></i></a>
+            <div class="edu-box">
+                <div class="college">
+                    <i class='bx bxs-graduation'></i>
+                    <h3>College</h3>
+                    <p>IIEST SHIBPUR</p>
+                    <a href="https://www.iiests.ac.in/" target="_blank" class="btn">Read more</a>
                 </div>
             </div>
-           
-
-            <div class="portfolio-box">
-                <img src="./download.png" alt="">
-                <div class="portfolio-layer">
-                  <h4>Socket-Application</h4>
-                  <p>Understanding of TCP-UDP socket application and understanding.</p>
-                  <a href="#"><i class='bx bx-link' ></i></a>
-                </div>
-
-            </div>
-           
-
         </div>
     </section>
 
-    <!--contact section design-->
+    <!-- Portfolio section design -->
+<section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Projects</span></h2>
+    <div class="portfolio-container">
+        <div class="portfolio-box">
+            <img src="./web-design.jpg" alt="" >
+            <div class="portfolio-layer">
+                <h4>Piano Music</h4>
+                <p>A basic game of playing music tunes by clicking different tiles.</p>
+                <a href="https://ayush182002.github.io/PianoMusic/" target="_blank"><i class='bx bx-link'></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="./download.png" alt="">
+            <div class="portfolio-layer">
+                <h4>Chat Application</h4>
+                <p>A web based Chat Application between multiple Clients</p>
+                <a href="https://github.com/Ayush182002/Chat-Application/tree/master" target="_blank"><i class='bx bx-link'></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="./download.png" alt="">
+            <div class="portfolio-layer">
+                <h4>Network Concepts</h4>
+                <p>A full understanding of TCP UDP using some problems.</p>
+                <a href="https://github.com/Ayush182002/Networking-Concepts" target="_blank"><i class='bx bx-link'></i></a>
+            </div>
+        </div>
+        <div class="portfolio-box">
+            <img src="./web-design.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Git Blog</h4>
+                <p>• It gives the complete understanding of Git Commands.</p>
+                <a href="https://github.com/Ayush182002/Git_Blog" target="_blank"><i class='bx bx-link'></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- contact section design -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
-
-        <form  class="input-box">
-        <div class="input-box">
-            <input type="text"placeholder="Full Name">
-            <input type="email"placeholder="Email Address">
-
-        </div>
-        <div class="input-box">
-            <input type="number"placeholder="Mobile Number">
-            <input type="text"placeholder="Email Subject">
-
-        </div>
-
-        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
-        <input type="submit" value="Send Message" class="btn"> 
-    </form>
-
+        <form class="input-box">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
     </section>
 
-    <!-- footer design-->
+    <!-- footer design -->
     <footer class="footer">
         <div class="footer-text">
             <p>Copyright &copy; 2023 by Ayush Yadav | All Rights Reserved.</p>
@@ -167,11 +147,8 @@
             <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
     </footer>
-   
 
-
-
-
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
 </body>
 </html>
